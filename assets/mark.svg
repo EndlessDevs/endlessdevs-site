@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><title>Clade mark: a branching tree of life</title>
+<path d="M128 220V150M128 150L72 96M128 150L184 96M72 96L44 56M72 96L100 56" fill="none" stroke="#e8e6df" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="128" cy="220" r="20" fill="#e8e6df"/>
+<circle cx="44" cy="52" r="20" fill="#c6e36b"/>
+<circle cx="100" cy="52" r="20" fill="#c6e36b"/>
+<circle cx="184" cy="92" r="26" fill="#c6e36b"/>
+<circle cx="190" cy="86" r="8" fill="#121413"/>
+</svg>
