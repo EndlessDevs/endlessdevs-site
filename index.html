@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,650;12..96,700;12..96,800&display=swap">
-<link rel="stylesheet" href="/style.css?v=20261022">
+<link rel="stylesheet" href="/style.css?v=20261022b">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -75,9 +75,22 @@
       <a href="/assets/shots/universe.jpg"><img src="/assets/shots/universe.jpg" alt="The universe view with a purple planet in orbit" loading="lazy" width="1600" height="900"></a>
     </section>
 
-    <section class="wishlist" aria-label="Germline on Steam">
-      <iframe src="https://store.steampowered.com/widget/5419730/" title="Germline on Steam" loading="lazy" width="646" height="190"></iframe>
-      <p>Follow development on <a href="https://x.com/TheEndlessDevs">X @TheEndlessDevs</a>.</p>
+    <section class="wishlist" aria-labelledby="wl-title">
+      <a class="wl-art" href="https://store.steampowered.com/app/5419730/Germline/" tabindex="-1" aria-hidden="true"><img src="/assets/og.jpg" alt="" loading="lazy" width="1200" height="630"></a>
+      <div class="wl-body">
+        <p class="eyebrow">Coming to Steam Early Access</p>
+        <h2 id="wl-title">Wishlist Germline</h2>
+        <p>Wishlisting is the best way to support the game. Steam will email you the moment it launches.</p>
+        <ul class="wl-meta">
+          <li><strong>Release</strong>Q4 2026</li>
+          <li><strong>Platforms</strong>Windows, Linux</li>
+          <li><strong>Languages</strong>30</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://store.steampowered.com/app/5419730/Germline/">Wishlist on Steam</a>
+          <a class="btn" href="https://x.com/TheEndlessDevs">Follow on X</a>
+        </div>
+      </div>
     </section>
 
     <section class="studio" id="about">

@@ -52,9 +52,14 @@ h1,h2,h3{font-family:var(--display);color:var(--ink)}
 .gallery a{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .gallery a:hover{border-color:var(--accent)}
 .gallery img{display:block;width:100%;height:auto}
-.wishlist{margin:0 0 72px}
-.wishlist iframe{display:block;width:100%;max-width:646px;height:190px;border:0}
-.wishlist p{color:var(--body);margin:14px 0 0}
+.wishlist{display:grid;grid-template-columns:1.15fr 1fr;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0 0 80px}
+.wl-art{display:block;background:var(--bg)}
+.wl-art img{display:block;width:100%;height:100%;object-fit:cover}
+.wl-body{padding:36px 36px 32px}
+.wl-body h2{font-size:clamp(28px,3.4vw,38px);line-height:1.1;font-weight:700;margin:14px 0 12px}
+.wl-body p{color:var(--body);margin:0}
+.wl-meta{display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;padding:0;margin:22px 0 26px;font-size:15px;color:var(--ink)}
+.wl-meta strong{display:block;font:600 11px/1.6 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .studio{max-width:640px;padding:0 0 72px}
 .studio .eyebrow{color:var(--accent);margin-bottom:16px}
 .studio p{color:var(--body);margin:0 0 14px}
@@ -96,6 +101,7 @@ th{color:var(--ink);font-weight:600;background:var(--panel)}
 @media(max-width:900px){
   .features{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr 1fr}
+  .wishlist{grid-template-columns:1fr}
   .doc-links{grid-template-columns:1fr}
   .glance{grid-template-columns:1fr 1fr}
   .layout{grid-template-columns:1fr;gap:28px}
@@ -112,6 +118,7 @@ th{color:var(--ink);font-weight:600;background:var(--panel)}
   .hero::after{background:rgba(18,20,19,.78)}
   .glance{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr}
+  .wl-body{padding:26px 20px 24px}
   th,td{padding:10px 8px;font-size:14px}
 }
 @media(max-width:600px){.nav a[href="/#about"]{display:none}}
