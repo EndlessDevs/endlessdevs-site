@@ -100,7 +100,7 @@ th{color:var(--ink);font-weight:600;background:var(--panel)}
 
 @media(max-width:900px){
   .features{grid-template-columns:1fr}
-  .gallery{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
   .wishlist{grid-template-columns:1fr}
   .doc-links{grid-template-columns:1fr}
   .glance{grid-template-columns:1fr 1fr}
