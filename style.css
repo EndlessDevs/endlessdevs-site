@@ -121,7 +121,7 @@ th{color:var(--ink);font-weight:600;background:var(--panel)}
   .wl-body{padding:26px 20px 24px}
   th,td{padding:10px 8px;font-size:14px}
 }
-@media(max-width:600px){.nav a[href="/#about"]{display:none}}
+@media(max-width:600px){.nav a[href="/#about"],.nav a[href*="tiktok"]{display:none}}
 @media(max-width:600px){.logo{gap:14px}.logo img{width:13vw}.logo span{font-size:12vw}}
 @media(max-width:380px){.nav a[href^="mailto"]{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
