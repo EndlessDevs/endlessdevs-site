@@ -1,5 +1,5 @@
 :root{color-scheme:light;--bg:#f2efe7;--panel:#f8f6f0;--ink:#141412;--body:#3b3a35;--muted:#6b6a62;--line:#d8d3c6;--rule:#141412;--accent:#004d3a;--display:"Big Shoulders Display",Impact,sans-serif;--text:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;--stripe:repeating-linear-gradient(-55deg,var(--accent) 0 26px,var(--bg) 26px 52px)}
-@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#141412;--panel:#1c1c19;--ink:#f2efe7;--body:#cfcbc0;--muted:#98958b;--line:#2e2d29;--rule:#f2efe7;--accent:#4fbf95;--stripe:repeating-linear-gradient(-55deg,#00704f 0 26px,#f2efe7 26px 52px)}}
+:root[data-theme=dark]{color-scheme:dark;--bg:#141412;--panel:#1c1c19;--ink:#f2efe7;--body:#cfcbc0;--muted:#98958b;--line:#2e2d29;--rule:#f2efe7;--accent:#4fbf95;--stripe:repeating-linear-gradient(-55deg,#00704f 0 26px,#f2efe7 26px 52px)}
 .corridor [stroke="#141412"]{stroke:var(--ink)}
 .corridor [stroke="#6b6a62"]{stroke:var(--muted)}
 .corridor [fill="#f8f6f0"]{fill:var(--bg)}
@@ -19,7 +19,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 .site-header .wrap{display:flex;justify-content:space-between;align-items:center;min-height:76px;gap:24px}
 .brand{display:flex;align-items:center;gap:12px;color:var(--ink);text-decoration:none;font:800 26px/1 var(--display);letter-spacing:.04em}
 .brand img{width:52px;height:26px}
-.nav{display:flex;gap:28px;font:600 14px/1 var(--text);letter-spacing:.14em;text-transform:uppercase}
+.nav{display:flex;margin-left:auto;gap:28px;font:600 14px/1 var(--text);letter-spacing:.14em;text-transform:uppercase}
 .nav a{color:var(--muted);text-decoration:none}
 .nav a:hover,.nav a[aria-current]{color:var(--ink)}
 .site-footer{color:var(--muted);font-size:14px;margin-top:40px}
@@ -177,3 +177,10 @@ th{color:var(--ink);font-weight:600;background:var(--panel);border-bottom:2px so
 .clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
 .clips figure,.press-block figure{margin:0}
 .clips video{display:block;width:100%;height:auto;background:#000;border:3px solid var(--rule)}
+
+/* Theme toggle: moon in light mode, sun in dark */
+.theme-toggle{flex:none;display:grid;place-items:center;width:40px;height:40px;padding:0;border:2px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer}
+.theme-toggle:hover{background:var(--ink);color:var(--bg)}
+.theme-toggle svg{width:20px;height:20px}
+.theme-toggle .sun,[data-theme=dark] .theme-toggle .moon{display:none}
+[data-theme=dark] .theme-toggle .sun{display:block}

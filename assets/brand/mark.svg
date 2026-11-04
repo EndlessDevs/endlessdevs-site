@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="128" viewBox="0 0 256 128"><title>EndlessDevs mark: an octagonal infinity loop</title>
-<style>.i{stroke:#141412}.p{stroke:#f2efe7}@media(prefers-color-scheme:dark){.i{stroke:#f2efe7}.p{stroke:#141412}}</style>
 <g fill="none" stroke-linejoin="miter" stroke-linecap="butt">
-<path d="M128 64L160 32H200L224 56V72L200 96H160L96 32H56L32 56V72L56 96H96Z" class="i" stroke-width="22"/>
-<path d="M128 64L160 32H200L224 56V72L200 96H160L96 32H56L32 56V72L56 96H96Z" class="p" stroke-width="7"/>
-<path d="M104 88L152 40" class="p" stroke-width="34"/>
-<path d="M103.3 88.7L152.7 39.3" class="i" stroke-width="22"/>
-<path d="M96 96L160 32" class="p" stroke-width="7"/>
+<path d="M128 64L160 32H200L224 56V72L200 96H160L96 32H56L32 56V72L56 96H96Z" stroke="#141412" stroke-width="22"/>
+<path d="M128 64L160 32H200L224 56V72L200 96H160L96 32H56L32 56V72L56 96H96Z" stroke="#f2efe7" stroke-width="7"/>
+<path d="M104 88L152 40" stroke="#f2efe7" stroke-width="34"/>
+<path d="M103.3 88.7L152.7 39.3" stroke="#141412" stroke-width="22"/>
+<path d="M96 96L160 32" stroke="#f2efe7" stroke-width="7"/>
 </g>
 </svg>
