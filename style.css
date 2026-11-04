@@ -1,4 +1,8 @@
 :root{color-scheme:light;--bg:#f2efe7;--panel:#f8f6f0;--ink:#141412;--body:#3b3a35;--muted:#6b6a62;--line:#d8d3c6;--rule:#141412;--accent:#004d3a;--display:"Big Shoulders Display",Impact,sans-serif;--text:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;--stripe:repeating-linear-gradient(-55deg,var(--accent) 0 26px,var(--bg) 26px 52px)}
+@media(prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#141412;--panel:#1c1c19;--ink:#f2efe7;--body:#cfcbc0;--muted:#98958b;--line:#2e2d29;--rule:#f2efe7;--accent:#4fbf95;--stripe:repeating-linear-gradient(-55deg,#00704f 0 26px,#f2efe7 26px 52px)}}
+.corridor [stroke="#141412"]{stroke:var(--ink)}
+.corridor [stroke="#6b6a62"]{stroke:var(--muted)}
+.corridor [fill="#f8f6f0"]{fill:var(--bg)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:24px}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--text);-webkit-font-smoothing:antialiased}
@@ -34,7 +38,7 @@ h1,h2,h3{font-family:var(--display);color:var(--ink);text-transform:uppercase;le
 
 /* Studio home */
 .corridor{border-bottom:3px solid var(--rule)}
-.corridor svg{display:block;width:100%;height:clamp(380px,56vw,640px)}
+.corridor svg{display:block;width:100%;height:clamp(240px,32vw,400px)}
 .corridor .wm{font:900 132px/1 var(--display);fill:var(--ink);letter-spacing:4px}
 .corridor .sub{font:400 30px/1 var(--text);fill:var(--ink);letter-spacing:22px}
 .intro-band{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start;padding:72px 0 24px}
@@ -168,7 +172,7 @@ th{color:var(--ink);font-weight:600;background:var(--panel);border-bottom:2px so
 .press-block h2{font-size:32px;line-height:1.1;font-weight:800;margin:0 0 16px;padding-top:22px;border-top:3px solid var(--rule)}
 .press-block p,.press-block li{color:var(--body);max-width:740px}
 .press-block .gallery{margin:0}
-.press-block .gallery img{aspect-ratio:16/9;object-fit:contain;background:var(--panel)}
+.press-block .gallery img{aspect-ratio:16/9;object-fit:contain;background:var(--bg)}
 .press-block figcaption{font-size:14px;color:var(--muted);padding:8px 2px 0}
 .clips{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:12px}
 .clips figure,.press-block figure{margin:0}
