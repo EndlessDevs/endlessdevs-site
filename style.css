@@ -48,13 +48,14 @@ h1,h2,h3{font-family:var(--display);color:var(--ink);text-transform:uppercase;le
 .games>h2{font-size:34px;font-weight:800;margin:14px 0 24px}
 .game-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .game{display:block;border:3px solid var(--rule);background:var(--panel);color:var(--ink);text-decoration:none}
-.game img{display:block;width:100%;height:auto;border-bottom:3px solid var(--rule)}
+.game img{display:block;width:100%;height:auto;aspect-ratio:460/215;object-fit:cover;border-bottom:3px solid var(--rule)}
 .game div{padding:20px 24px 24px}
 .game h3{font-size:30px;font-weight:800;margin:10px 0 6px}
 .game p{margin:0;color:var(--body)}
+.game .more{margin-top:16px;color:var(--accent);font:700 13px/1 var(--text);letter-spacing:.14em;text-transform:uppercase}
 a.game:hover{background:var(--ink)}
 a.game:hover h3,a.game:hover p,a.game:hover .eyebrow{color:var(--bg)}
-.game.next{display:flex;align-items:center;justify-content:center;min-height:320px;background:repeating-linear-gradient(-55deg,transparent 0 26px,rgba(0,77,58,.08) 26px 52px)}
+.game.next{grid-column:1/-1;display:flex;align-items:center;justify-content:center;min-height:160px;background:repeating-linear-gradient(-55deg,transparent 0 26px,color-mix(in srgb,var(--accent) 10%,transparent) 26px 52px)}
 .game.next div{text-align:center}
 
 /* Game page: the game's own dark art band inside the studio frame */
